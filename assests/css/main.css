@@ -171,10 +171,20 @@
 .header__icon-item{
     font-size: 30px;
     color: var(--white-color);
-    padding: 0 8px;
+    padding: 0 16px;
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+.header__icon-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__icon-text-item{
+    font-size: 1.2rem;
+    padding: 4px 8px;
 }
 
 .header__icon-cart-quantity{

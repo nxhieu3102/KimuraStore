@@ -707,12 +707,12 @@
     margin-top: 50px;
     width: 100%;
     background-color: #ccc;
-
+    padding-bottom: 50px;
 }
 
 
 .contact--footer{
-
+    padding-top: 25px;
 }
 
 .contact__header{
@@ -749,11 +749,12 @@
 
 
 .about-us{
-
+    padding-top: 25px;
 }
 
-.about-us__header{
-
+.about-us__title{
+    font-size: 2.4rem;
+    font-weight: 600;
 }
 
 .about-us__description{

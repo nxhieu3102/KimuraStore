@@ -761,5 +761,6 @@
     color: var(--text-color);
     text-align: center;
     padding: 8px;
+    line-height: 2rem;
 }
 

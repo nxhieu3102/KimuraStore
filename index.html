@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimura Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./assests/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assests/css/base.css">
+    <link rel="stylesheet" href="./assests/css/grid.css">
+    <link rel="stylesheet" href="./assests/css/main.css">
+    <link rel="stylesheet" href="./assests/css/responsive.css">
+    <link rel="stylesheet" href="./assests/font/1.3.0/css/line-awesome.css">
+    <link rel="stylesheet" href="./assests/font/1.3.0/css/line-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">    
+    <link rel="icon" href="./assests/img/LOGO.png" type="image/x-icon">
+</head>
+<body>
+    <div class="contact">
+        <div class="contact__icon">
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="contact__list">
+            <a target ="_blank" href="https://zalo.me/0914837823" class="contact__list-item">
+                <img src="./assests/img/contact/zalo.png" alt="" class="contact__item-img" title="zalo">
+            </a>
+            <a target ="_blank" href="" class="contact__list-item">
+                <img src="./assests/img/contact/faacebook.png" alt="" class="contact__item-img" title="facebook">
+            </a>
+            <a target ="_blank" href="https://shopee.vn/kimura1404" class="contact__list-item" title = "shopee">
+                <img src="./assests/img/contact/shopee.png" alt="" class="contact__item-img">
+            </a>
+            <a target ="_blank" href="https://www.instagram.com/kimura.store/" class="contact__list-item" title="instagram">
+                <img src="./assests/img/contact/instagram.png" alt="" class="contact__item-img">
+            </a>
+        </div>
+    </div>
+
+    <header id="header">
+        <label for="category__mobile-input" class = "category-icon--mobile">
+            <i class="fas fa-bars category__bar-icon--mobile"></i>
+        </label>
+
+        <input type="checkbox" hidden name="" class = "category__input" id="category__mobile-input">
+
+        <div class="category__mobile">
+            <div class="category__mobile-header">
+                <span class="category__mobile-title">Danh mục</span>
+                <label for="category__mobile-input">
+                    <i class="fas fa-times category__mobile-close"></i>
+                </label>
+            </div>
+            <ul class="category__bar--mobile">
+                <li class="category__bar-item--mobile">
+                    <a href="" class="category__bar-item--mobile-link">Trang điểm</a>
+                </li>
+                <li class="category__bar-item--mobile">
+                    <a href="" class="category__bar-item--mobile-link">Nước cân bằng da</a>
+                </li>
+                <li class="category__bar-item--mobile">
+                    <a href="" class="category__bar-item--mobile-link">Giảm cân và chăm sóc sức khỏe</a>
+                </li>
+                <li class="category__bar-item--mobile">
+                    <a href="" class="category__bar-item--mobile-link">Mặt nạ</a>
+                </li>
+                <li class="category__bar-item--mobile">
+                    <a href="" class="category__bar-item--mobile-link">Tắm & chăm sóc cơ thể</a>
+                </li>
+                <li class="category__bar-item--mobile">
+                    <a href="" class="category__bar-item--mobile-link">Dụng cụ làm đẹp</a>
+                </li>
+                <li class="category__bar-item--mobile">
+                    <a href="" class="category__bar-item--mobile-link">Tinh chất dưỡng</a>
+                </li>
+                <li class="category__bar-item--mobile">
+                    <a href="" class="category__bar-item--mobile-link">Kem dưỡng ẩm</a>
+                </li>
+                <li class="category__bar-item--mobile">
+                    <a href="" class="category__bar-item--mobile-link">Sản phẩm dưỡng mắt</a>
+                </li>
+                <li class="category__bar-item--mobile">
+                    <a href="" class="category__bar-item--mobile-link">Sửa rửa mặt</a>
+                </li>
+                <li class="category__bar-item--mobile">
+                    <a href="" class="category__bar-item--mobile-link">Nhà cửa và đời sống: đồ dùng cá nhân & gia đình </a>
+                </li>
+                <li class="category__bar-item--mobile">
+                    <a href="" class="category__bar-item--mobile-link">Kem chống nắng</a>
+                </li>
+                <li class="category__bar-item--mobile">
+                    <a href="" class="category__bar-item--mobile-link">Đồ ăn</a>
+                </li>   
+            </ul>
+        </div>
+
+        <div class="category__overlay"></div>
+
+        <label for="mobile-search-checkbox" class="header__mobile-search">
+            <i class="header__mobile-search-icon fas fa-search"></i>
+        </label>
+
+        <div class="header__logo">
+            <div class="header__logo-icon">
+                <a href="#">
+                    <img src="./assests/img/LOGO.png" alt="" class="header__logo-img">
+                </a>
+            </div>
+            <div class="header__icon-item hide-on-mobile hide-on-tablet">
+                <a href="" class = "header__store-link">
+                    <i class="fas fa-store"></i>
+                </a>
+            </div>
+        </div>
+
+        <input type="checkbox" hidden id="mobile-search-checkbox" class = "header__search-checkbox">
+
+        <div class="header__search">
+            <div class="header__search-input">
+                <input type="text" class="header__search-input-box" placeholder="Tìm kiếm sản phẩm">
+            </div>
+            <div class="header__search-button" >
+                <button class="header__search-button-item">
+                    <i class="fas fa-search header__search-button-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="header__icon">
+            <div class="header__icon-item">
+                <i class="las la-heart"></i>
+            </div>
+            <div class="header__icon-item header__cart" >
+                <i class="las la-shopping-cart"></i>
+                <span class="header__icon-cart-quantity">0</span>
+                <div class="header__cart-list">
+                    <div class="header__cart-list--empty">
+                        <img src="./assests/img/no__cart.jpg" alt="" class="header__cart-no-cart-img">
+                        <span class="header__cart-list-no-cart-msg">
+                            Chưa có sản phẩm
+                        </span>
+                    </div>
+                    <div class="header__cart-list--not-empty">
+                        <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                        <ul class="header__cart-list-item">
+                            <!-- cart item -->
+                            <li class="header__cart-item">
+                                <img src="./assests/img/item.jpg" alt="" class="header__cart-img">
+                                <div class="header__cart-item-info">
+                                    <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">
+                                            Bộ kem đặc trị vùng mắt
+                                        </h5>
+                                        <div class="header__cart-item-price-wrap">
+                                            <span class="header__cart-item-price">2.000.000đ</span>
+                                            <span class="header__cart-item-multiply">x</span>
+                                            <span class="header__cart-item-qnt">2</span>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-description">
+                                            Phân loại: Bạc
+                                        </span>
+                                        <span class="header__cart-item-remove">Xóa</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__cart-item">
+                                <img src="./assests/img/item.jpg" alt="" class="header__cart-img">
+                                <div class="header__cart-item-info">
+                                    <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">
+                                            Bộ kem đặc trị vùng mắt
+                                        </h5>
+                                        <div class="header__cart-item-price-wrap">
+                                            <span class="header__cart-item-price">2.000.000đ</span>
+                                            <span class="header__cart-item-multiply">x</span>
+                                            <span class="header__cart-item-qnt">2</span>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-description">
+                                            Phân loại: Bạc
+                                        </span>
+                                        <span class="header__cart-item-remove">Xóa</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__cart-item">
+                                <img src="./assests/img/item.jpg" alt="" class="header__cart-img">
+                                <div class="header__cart-item-info">
+                                    <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">
+                                            Bộ kem đặc trị vùng mắt
+                                        </h5>
+                                        <div class="header__cart-item-price-wrap">
+                                            <span class="header__cart-item-price">2.000.000đ</span>
+                                            <span class="header__cart-item-multiply">x</span>
+                                            <span class="header__cart-item-qnt">2</span>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-description">
+                                            Phân loại: Bạc
+                                        </span>
+                                        <span class="header__cart-item-remove">Xóa</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="header__cart-view-cart btn">
+                            Xem Giỏ Hàng
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="app-container">
+        <div class="grid wide">
+            <!-- intro bar -->
+            <div class="row intro-bar">
+                <div class="col l-3 m-3 c-6">
+                    <div class="intro-bar__item">
+                        <img src="./assests/img/headerbar/japan.png" alt="" class="intro-bar__img">
+                        <span class="intro-bar__title">Hàng Nhật Nội Địa Chuẩn 100%</span>
+                    </div>
+                </div>
+                <div class="col l-3 m-3 c-6">
+                    <div class="intro-bar__item">
+                        <img src="./assests/img/headerbar/100.png" alt="" class="intro-bar__img">
+                        <span class="intro-bar__title">Uy Tín Hàng Đầu</span>
+
+                    </div>
+                </div>
+                <div class="col l-3 m-3 c-6">
+                    <div class="intro-bar__item">
+                        <img src="./assests/img/headerbar/quality.png" alt="" class="intro-bar__img">
+                        <span class="intro-bar__title">Chất Lượng Đảm Bảo</span>
+
+                    </div>
+                </div>
+                <div class="col l-3 m-3 c-6">
+                    <div class="intro-bar__item">
+                        <img src="./assests/img/headerbar/delivery.png" alt="" class="intro-bar__img">
+                        <span class="intro-bar__title">Giao Hàng Nhanh Toàn Quốc</span>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-part">
+                <ul class="category-bar hide-on-mobile hide-on-tablet">
+                    <li class="category-bar__item">
+                        <a href="" class="category-bar__item-link">Trang điểm</a>
+                    </li>
+                    <li class="category-bar__item">
+                        <a href="" class="category-bar__item-link">Nước cân bằng da</a>
+                    </li>
+                    <li class="category-bar__item">
+                        <a href="" class="category-bar__item-link">Giảm cân và chăm sóc sức khỏe</a>
+                    </li>
+                    <li class="category-bar__item">
+                        <a href="" class="category-bar__item-link">Mặt nạ</a>
+                    </li>
+                    <li class="category-bar__item">
+                        <a href="" class="category-bar__item-link">Tắm & chăm sóc cơ thể</a>
+                    </li>
+                    <li class="category-bar__item">
+                        <a href="" class="category-bar__item-link">Dụng cụ làm đẹp</a>
+                    </li>
+                    <li class="category-bar__item">
+                        <a href="" class="category-bar__item-link">Tinh chất dưỡng</a>
+                    </li>
+                    <li class="category-bar__item">
+                        <a href="" class="category-bar__item-link">Kem dưỡng ẩm</a>
+                    </li>
+                    <li class="category-bar__item">
+                        <a href="" class="category-bar__item-link">Sản phẩm dưỡng mắt</a>
+                    </li>
+                    <li class="category-bar__item">
+                        <a href="" class="category-bar__item-link">Sửa rửa mặt</a>
+                    </li>
+                    <li class="category-bar__item">
+                        <a href="" class="category-bar__item-link">Nhà cửa và đời sống: đồ dùng cá nhân & gia đình </a>
+                    </li>
+                    <li class="category-bar__item">
+                        <a href="" class="category-bar__item-link">Kem chống nắng</a>
+                    </li>
+                    <li class="category-bar__item">
+                        <a href="" class="category-bar__item-link">Đồ ăn</a>
+                    </li>   
+                </ul>
+                <div class="intro-image hide-on-mobile">
+                    <img src="./assests/img/intro/item1.jpg" alt="" class="intro-image__item">
+                    <img src="./assests/img/intro/item2.jpg" alt="" class="intro-image__item">
+                    <img src="./assests/img/intro/item3.jpg" alt="" class="intro-image__item">
+
+                </div>
+            </div>
+            <!-- best seller -->
+            <div class="best-seller">
+                <h1 class="product-event__title">
+                    Bán Chạy
+                </h1>
+                <div class="row product-event__list ">
+                    <div class="col l-2-4 m-4 c-6 best-seller__item">
+                        <a href="" class="product-event__item">
+                            <div class="product-event__item-img" style="background-image: url(./assests/img/product/item1.jpg);"></div>
+                            <h4 class="product-event__item-name">
+                                [Restock bao bì mới 2021] [thêm vị Trà sữa hoàng gia] BỘT GIẢM CÂN ASAHI SLIM UP SLIM SUPERFOOD SHAKE NỘI ĐỊA NHẬT BẢN
+                            </h4>
+                            <div class="product-event__item-price">
+                                560.000đ
+                            </div>
+                            <div class="product-event__item-add">
+                                <button class="product-event__item-btn btn">
+                                    Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                            <div class="best-seller__label">
+                                <i class="fas fa-check"></i>
+                                <span>Best Seller</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 best-seller__item">
+                        <a href="" class="product-event__item">
+                            <div class="product-event__item-img" style="background-image: url(./assests/img/product/item2.jpg);"></div>
+                            <h4 class="product-event__item-name">
+                                Xịt khoáng dưỡng da, kháng khuẩn, bụi mịn PM 2. 5 Earth Kafun Guard Spray nội địa Nhật Bản Top 1 Cosme                            </h4>
+                            <div class="product-event__item-price">
+                                350.000đ
+                            </div>
+                            <div class="product-event__item-add">
+                                <button class="product-event__item-btn btn">
+                                    Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                            <div class="best-seller__label">
+                                <i class="fas fa-check"></i>
+                                <span>Best Seller</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 best-seller__item">
+                        <a href="#" class="product-event__item">
+                            <div class="product-event__item-img" style="background-image: url(./assests/img/product/item3.jpg);"></div>
+                            <h4 class="product-event__item-name">
+                                Xịt khoáng dưỡng da, kháng khuẩn, bụi mịn PM 2. 5 Earth Kafun Guard Spray nội địa Nhật Bản Top 1 Cosme                            </h4>
+                            <div class="product-event__item-price">
+                                280.000đ - 495.000đ
+                            </div>
+                            <div class="product-event__item-add">
+                                <button class="product-event__item-btn btn">
+                                    Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                            <div class="best-seller__label">
+                                <i class="fas fa-check"></i>
+                                <span>Best Seller</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 best-seller__item">
+                        <a href="" class="product-event__item">
+                            <div class="product-event__item-img" style="background-image: url(./assests/img/product/item4.jpg);"></div>
+                            <h4 class="product-event__item-name">
+                                DẦU GỘI/XẢ KRACIE ICHIKAMI NỘI ĐỊA NHẬT BẢN DẠNG TÚI REFILL 340ML
+                            </h4>
+                            <div class="product-event__item-price">
+                                205.000đ - 410.000đ
+                            </div>
+                            <div class="product-event__item-add">
+                                <button class="product-event__item-btn btn">
+                                    Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                            <div class="best-seller__label">
+                                <i class="fas fa-check"></i>
+                                <span>Best Seller</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 best-seller__item">
+                        <a href="" class="product-event__item">
+                            <div class="product-event__item-img" style="background-image: url(./assests/img/product/item5.jpg);"></div>
+                            <h4 class="product-event__item-name">
+                                KEO DÁN MI GIẢ D-UP 552 CLEAR TYPE NỘI ĐỊA NHẬT
+                            </h4>
+                            <div class="product-event__item-price">
+                                325.000đ
+                            </div>
+                            <div class="product-event__item-add">
+                                <button class="product-event__item-btn btn">
+                                    Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                            <div class="best-seller__label">
+                                <i class="fas fa-check"></i>
+                                <span>Best Seller</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4 best-seller__item">
+                        <a href="" class="product-event__item">
+                            <div class="product-event__item-img" style="background-image: url(./assests/img/product/item5.jpg);"></div>
+                            <h4 class="product-event__item-name">
+                                KEO DÁN MI GIẢ D-UP 552 CLEAR TYPE NỘI ĐỊA NHẬT
+                            </h4>
+                            <div class="product-event__item-price">
+                                325.000đ
+                            </div>
+                            <div class="product-event__item-add">
+                                <button class="product-event__item-btn btn">
+                                    Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                            <div class="best-seller__label">
+                                <i class="fas fa-check"></i>
+                                <span>Best Seller</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- discount -->
+            <div class="discount">
+                <h1 class="product-event__title">
+                    Giảm Giá
+                </h1>
+                <div class="row product-event__list ">
+                    <div class="col l-2-4 m-4 c-6">
+                        <a href="" class="product-event__item">
+                            <div class="product-event__item-img" style="background-image: url(./assests/img/product/item6.jpg);"></div>
+                            <h4 class="product-event__item-name">
+                                (Săn Sale-Giá Tốt-Chuẩn bill nội địa) Mặt nạ Mitomo cô gái Geisha nội địa Nhật Bản
+                            </h4>
+                            <div class="product-event__item-price">
+                                <span class="product-event__item-price--old">35.000đ</span>
+                                <span class="product-event__item-price--new">25.000đ</span>
+                            </div>
+                            <div class="product-event__item-add">
+                                <button class="product-event__item-btn btn">
+                                    Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                            <div class="discount__label">
+                                <span class="discount__label-percent">29%</span>
+                                <span class="discount__label-text">
+                                    GIẢM
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <a href="" class="product-event__item">
+                            <div class="product-event__item-img" style="background-image: url(./assests/img/product/item7.jpg);"></div>
+                            <h4 class="product-event__item-name">
+                                (Loại 24 gói-chuẩn bill nội địa-date xa) TRÀ GIẢM CÂN BAN ĐÊM ORIHIRO NIGHT DIET TEA NHẬT BẢN
+                            </h4>
+                            <div class="product-event__item-price">
+                                <span class="product-event__item-price--old">245.000đ</span>
+                                <span class="product-event__item-price--new">195.000đ</span>
+                            </div>
+                            <div class="product-event__item-add">
+                                <button class="product-event__item-btn btn">
+                                    Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                            <div class="discount__label">
+                                <span class="discount__label-percent">20%</span>
+                                <span class="discount__label-text">
+                                    GIẢM
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <a href="#" class="product-event__item">
+                            <div class="product-event__item-img" style="background-image: url(./assests/img/product/item8.jpg);"></div>
+                            <h4 class="product-event__item-name">
+                                Phấn má dạng thỏi Cezanne Cheek Stick nội địa Nhật Bản(nhắn shop để chọn màu 01, 02 hoặc 03)
+                            </h4>
+                            <div class="product-event__item-price">
+                                <span class="product-event__item-price--old">255.000đ</span>
+                                <span class="product-event__item-price--new">155.000đ</span>
+                            </div>
+                            <div class="product-event__item-add">
+                                <button class="product-event__item-btn btn">
+                                    Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                            <div class="discount__label">
+                                <span class="discount__label-percent">39%</span>
+                                <span class="discount__label-text">
+                                    GIẢM
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <a href="" class="product-event__item">
+                            <div class="product-event__item-img" style="background-image: url(./assests/img/product/item9.jpg);"></div>
+                            <h4 class="product-event__item-name">
+                                Mặt nạ Botanical Esthe 7 in 1 nội địa Nhật Bản
+                            </h4>
+                            <div class="product-event__item-price">
+                                <span class="product-event__item-price--old">250.000đ</span>
+                                <span class="product-event__item-price--new">190.000đ</span>
+                            </div>
+                            <div class="product-event__item-add">
+                                <button class="product-event__item-btn btn">
+                                    Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                            <div class="discount__label">
+                                <span class="discount__label-percent">24%</span>
+                                <span class="discount__label-text">
+                                    GIẢM
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <a href="" class="product-event__item">
+                            <div class="product-event__item-img" style="background-image: url(./assests/img/product/item10.jpg);"></div>
+                            <h4 class="product-event__item-name">
+                                Mặt nạ Botanical Esthe 7 in 1 nội địa Nhật Bản
+                            </h4>
+                            <div class="product-event__item-price">
+                                <span class="product-event__item-price--old">200.000đ</span>
+                                <span class="product-event__item-price--new">195.000đ</span>
+                            </div>
+                            <div class="product-event__item-add">
+                                <button class="product-event__item-btn btn">
+                                    Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                            <div class="discount__label">
+                                <span class="discount__label-percent">3%</span>
+                                <span class="discount__label-text">
+                                    GIẢM
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <a href="" class="product-event__item">
+                            <div class="product-event__item-img" style="background-image: url(./assests/img/product/item10.jpg);"></div>
+                            <h4 class="product-event__item-name">
+                                Mặt nạ Botanical Esthe 7 in 1 nội địa Nhật Bản
+                            </h4>
+                            <div class="product-event__item-price">
+                                <span class="product-event__item-price--old">200.000đ</span>
+                                <span class="product-event__item-price--new">195.000đ</span>
+                            </div>
+                            <div class="product-event__item-add">
+                                <button class="product-event__item-btn btn">
+                                    Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                            <div class="discount__label">
+                                <span class="discount__label-percent">3%</span>
+                                <span class="discount__label-text">
+                                    GIẢM
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script
+  type="text/javascript"
+  src="./jquery-1.11.0.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="./jquery-migrate-1.2.1.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="./slick.min.js"
+></script>
+<script src="./index.js"></script>
+</html>

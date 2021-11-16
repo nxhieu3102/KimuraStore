@@ -700,3 +700,66 @@
 .slick-prev.pull-left.slick-arrow{
     left: -50px;
 }
+
+/* footer */
+
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ccc;
+
+}
+
+
+.contact--footer{
+
+}
+
+.contact__header{
+    padding: 20px 0;
+}
+
+.contact__infor{
+    display: flex;
+    padding-bottom: 16px;
+}
+
+.contact__infor-icon{
+    font-size: 2rem;
+    
+}
+
+.contact__infor-text{
+    font-size: 1.4rem;
+    margin-left: 16px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.contact__img-list{
+    display: flex;
+}
+
+.contact__img{
+    display: block;
+    width: 30px;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+
+.about-us{
+
+}
+
+.about-us__header{
+
+}
+
+.about-us__description{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-align: center;
+    padding: 8px;
+}
+

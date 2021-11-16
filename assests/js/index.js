@@ -13,7 +13,7 @@ function slickSlider(className, slidesToShow, slidesToScroll, isAuto){
         slidesToScroll: slidesToScroll,
         draggable: false,
         autoplay: isAuto,
-        autoplaySpeed: 500,
+        autoplaySpeed: 2000,
         prevArrow:`<button type='button' class='slick-prev pull-left'><i class="las la-arrow-left" aria-hidden='true'></i></button>`,
         nextArrow:`<button type='button' class='slick-next pull-right'><i class="las la-arrow-right" aria-hidden='true'></i></button>`,
     });

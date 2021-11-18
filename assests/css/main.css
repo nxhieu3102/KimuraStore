@@ -518,17 +518,28 @@
 }
 
 .category__mobile-header{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.category__mobile-click:hover .category__bar--mobile{
+    display: block;
+}
+
 .category__mobile-title{
     color: var(--red-color);
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin: 16px;
-    font-weight: 600;
+    /* font-weight: 600; */
     display: block;
+}
+
+.category__mobile-icon-down{
+    font-size: 2.4rem;
+    margin: 16px;
+    color: var(--red-color);
 }
 
 .category__mobile-close{
@@ -540,6 +551,10 @@
 .category__bar--mobile{
     list-style: none;
     overflow-y: scroll;
+    position: absolute;
+    width: 220px;
+    display: none;
+    top: 100%;
 }
 
 .category__bar-item--mobile-link{

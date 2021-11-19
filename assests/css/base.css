@@ -310,6 +310,7 @@ h1,h2,h3,h4,p{
     font-weight: 600;
 }
 
+
 .header__icon{
     display: flex;
     justify-content: space-between;

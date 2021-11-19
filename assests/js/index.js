@@ -41,16 +41,28 @@ const app = {
     },
     // Responsive on tablet and mobile
     mobileTabletResponsive: function (ev) {
+        $('.header__cart').click(function () {
+            if ($('.header__cart-list').css('display') === "none")
+                $('.header__cart-list').css('display', "block");
+            else
+                $('.header__cart-list').css('display', "none");
+        })
+
+        $('.category__mobile-click').click(function () {
+            if ($('.category__bar--mobile').css('display') === "none")
+                $('.category__bar--mobile').css('display', "block");
+            else
+                $('.category__bar--mobile').css('display', "none");
+        })
+
         function handleEventOnclick() {
             document.addEventListener("click", function (event) {
                 // check if each item is visiable
                 const $target = $(event.target);
-                
-                if ($('.header__cart-list').css('display') === "none" && $target.closest(".header__cart").length) {
-                    $('.header__cart-list').css('display', "block");
-                }
 
-                
+                if (!$target.closest(".header__cart").length)
+                    $('.header__cart-list').css('display', "none");
+
             });
         }
 

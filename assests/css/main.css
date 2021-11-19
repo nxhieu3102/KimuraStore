@@ -168,10 +168,6 @@
     justify-content: space-between;
 }
 
-.category__mobile-click:hover .category__bar--mobile{
-    display: block;
-}
-
 .category__mobile-title{
     color: var(--red-color);
     font-size: 1.6rem;

@@ -5,7 +5,7 @@ const tabletBP = window.matchMedia("(min-width: 740px) and (max-width: 1024px)")
 const mobileTabletBP = window.matchMedia("(max-width: 1024px)");
 
 const app = {
-    slickSlider: function() {
+    slickSlider: function () {
         $('.product-event__list').slick({
             autoplay: false,
             draggable: false,
@@ -40,36 +40,40 @@ const app = {
         })
     },
     // Responsive on tablet and mobile
-    mobileTabletResponsive: function(ev){
-        if (ev.matches) {
-            // cart click
-            const cart = $(".header__cart");
-            cart.click(function(){
-                select('.header__cart-list').style.display = "block";
-            })
-
+    mobileTabletResponsive: function (ev) {
+        function handleEventOnclick() {
             document.addEventListener("click", function (event) {
-                console.log(event.target);
+                // check if each item is visiable
                 const $target = $(event.target);
-                if (
-                    !$target.closest(".header__cart").length &&
-                    $(".header__cart-list").is(":visible")
-                ) {
-                    $(".header__cart-list").hide();
+                
+                if ($('.header__cart-list').css('display') === "none" && $target.closest(".header__cart").length) {
+                    $('.header__cart-list').css('display', "block");
                 }
+
+                
             });
         }
+
+
+        if (ev.matches) {
+            handleEventOnclick();
+        }
+
+
+
+
+
     },
     // Responsive on mobile
-    mobileResponsive: function(ev){
-        
+    mobileResponsive: function (ev) {
+
     },
     // Responsive on tablet
-    tabletResponsive: function(ev){
-       
+    tabletResponsive: function (ev) {
+
     },
 
-    checkBreakPoint: function(){
+    checkBreakPoint: function () {
         this.mobileResponsive(mobileBP);
         mobileBP.addListener(this.mobileResponsive);
         this.tabletResponsive(tabletBP);
@@ -78,7 +82,7 @@ const app = {
         mobileTabletBP.addListener(this.mobileTabletResponsive);
     },
 
-    start: function() {
+    start: function () {
         this.checkBreakPoint();
         this.slickSlider();
     }
@@ -86,10 +90,7 @@ const app = {
 
 app.start();
 
-function hoverToClick(item) {
-    console.log(item)
-    select('.header__cart-list').style.display = "block";
-}
+
 
 // check Break point
 

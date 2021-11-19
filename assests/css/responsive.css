@@ -88,5 +88,17 @@
         visibility: hidden;
         overflow: hidden;
     }
-
+    .intro-image__item{
+        /* width: auto!important; */
+        height: 200px;
+    }
+    .intro-image{
+        height: 200px;
+    }
+    .intro-bar{
+        display: none;
+    }
+    .about-us{
+        padding-top: 50px;
+    }
 }

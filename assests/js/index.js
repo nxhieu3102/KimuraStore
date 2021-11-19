@@ -43,15 +43,19 @@ const app = {
     mobileTabletResponsive: function(ev){
         if (ev.matches) {
             // cart click
-            const cart = select(".header__cart");
-            cart.onclick = hoverToClick;
+            const cart = $(".header__cart");
+            cart.click(function(){
+                select('.header__cart-list').style.display = "block";
+            })
+
             document.addEventListener("click", function (event) {
-                const $target = select(event.target);
+                console.log(event.target);
+                const $target = $(event.target);
                 if (
                     !$target.closest(".header__cart").length &&
-                    select(".header__cart-list").is(":visible")
+                    $(".header__cart-list").is(":visible")
                 ) {
-                    select(".header__cart-list").hide();
+                    $(".header__cart-list").hide();
                 }
             });
         }
@@ -83,7 +87,8 @@ const app = {
 app.start();
 
 function hoverToClick(item) {
-    item.display = block;
+    console.log(item)
+    select('.header__cart-list').style.display = "block";
 }
 
 // check Break point

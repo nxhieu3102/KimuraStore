@@ -40,7 +40,7 @@
 .contact:hover .contact__list{
     display: flex;
     opacity: 1;
-    height: 228px;
+    height: 240px;
 }
 
 .contact__list-item{
@@ -274,6 +274,7 @@
 .header__cart-item {
     display: flex;
     align-items: center;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__cart-item:hover{
@@ -562,10 +563,14 @@
     font-size: 1.4rem;
     color: var(--text-color);
     font-weight: 600;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 .category__bar-item--mobile{
     padding: 12px 16px;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 /* best seller */

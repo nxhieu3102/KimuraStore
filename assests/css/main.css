@@ -77,6 +77,23 @@
     top: -13px;
     left: 0;
 }
+.category__header{
+    display: block;
+    text-align: left;
+    padding: 12px 8px;
+}   
+
+.category__header-link{
+    display: block;
+    text-decoration: none;
+    color: var(--red-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
 
 .category-bar__item{
     display: block;

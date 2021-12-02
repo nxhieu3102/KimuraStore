@@ -1,0 +1,28 @@
+html{
+    background-color: #f8f8f8;
+}
+
+.allproduct-container {
+    padding-top: calc(var(--header-height) + 50px);
+    background-color: #f8f8f8;
+    width: 100%;
+}
+
+.filter{
+
+}
+
+
+.filter-choice{
+    padding: 16px 0;
+
+}
+
+.filter-option{
+    background-color: #f8f8f8;
+    outline: none;
+    font-size: 1.4rem;
+    padding: 4px;
+    width: 100%;
+    border-radius: 4px;
+}

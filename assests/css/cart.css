@@ -74,25 +74,28 @@
     object-fit: cover;
     width: 100px;
 }
+.img_wrap{
+    height: 100%;
+}
 
 .item-img-des-wrap{
     display: flex;
     align-items: center;
     height: 100%;
-    width: 400px;
 }
 
 .item-img-des-wrap p{
-    margin-left: 20px;
     font-size: 1.6rem;
     line-height: 2rem;
     font-weight: 500;
-    color: var(--re-color);
+    color: var(--text-color);
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     text-overflow: ellipsis;
     overflow: hidden;
+    max-width: 250px;
+    margin-left: 20px;
 }
 
 .remove-product{

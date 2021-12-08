@@ -15,9 +15,11 @@
         display: none;
     }
     .item-img-des-wrap{
-        width: 300px;
+        width: 450px;
     }
-
+    .item-img-des-wrap p{
+        max-width: 200px;
+    }
     .last-item{
         border-bottom: 1px solid #ececec;
     }
@@ -31,5 +33,15 @@
     }
     .item_img{
         width: 90px;
+    }
+
+    .item-img-des-wrap{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .item-img-des-wrap > p{
+
     }
 }

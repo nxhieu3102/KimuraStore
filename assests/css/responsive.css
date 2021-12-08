@@ -1,6 +1,6 @@
 /* mobile and tablet devices*/
 
-@media  (max-width: 1025px) {
+@media only screen and  (max-width: 1025px) {
     .hide-on-tablet-mobile{
         display: none!important;
     }
@@ -33,7 +33,7 @@
 
 /* tablet */
 
-@media (min-width: 740px) and (max-width: 1024px) {
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
     /* Header */
     .hide-on-tablet{
         display: none;
@@ -64,7 +64,7 @@
 }
 
 
-@media (max-width: 739px){
+@media only screen and (max-width: 739px){
     .hide-on-mobile{
         display: none;
     }

@@ -1,6 +1,6 @@
 /* mobile and tablet devices*/
 
-@media (max-width: 1025px) {
+@media  (max-width: 1025px) {
     .hide-on-tablet-mobile{
         display: none!important;
     }

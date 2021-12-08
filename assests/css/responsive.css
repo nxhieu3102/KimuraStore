@@ -1,6 +1,6 @@
 /* mobile and tablet devices*/
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
     .hide-on-tablet-mobile{
         display: none!important;
     }
@@ -8,7 +8,7 @@
         padding: 0 10px;
     }
     .category-icon--mobile{
-        display: block;
+        display: block!important;
     }
 
     /* button slider */

@@ -186,6 +186,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 .category__mobile-title{
@@ -295,6 +297,10 @@
     display: flex;
     justify-content: center;
     margin: 10px 0;
+}
+
+.best-seller__item{
+    -webkit-tap-highlight-color: transparent;
 }
 
 .best-seller__label{

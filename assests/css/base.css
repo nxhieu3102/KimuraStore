@@ -96,7 +96,8 @@ h1,h2,h3,h4,p{
     top: 90%;
     cursor: pointer;
     z-index: 1;
-    display: none;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 .contact__icon{
@@ -246,6 +247,7 @@ h1,h2,h3,h4,p{
 }
 
 .header__logo-icon{
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__store-link{

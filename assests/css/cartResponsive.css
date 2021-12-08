@@ -1,0 +1,35 @@
+/* mobile and tablet devices*/
+
+@media (max-width: 1024px) {
+    .hide-on-tablet-mobile{
+        display: none!important;
+    }
+    
+}
+
+/* tablet */
+
+@media (min-width: 740px) and (max-width: 1024px) {
+    /* Header */
+    .hide-on-tablet{
+        display: none;
+    }
+    .item-img-des-wrap{
+        width: 300px;
+    }
+
+    .last-item{
+        border-bottom: 1px solid #ececec;
+    }
+
+    
+}
+
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .item_img{
+        width: 90px;
+    }
+}

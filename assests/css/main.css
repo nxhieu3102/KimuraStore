@@ -5,6 +5,9 @@
 
 .app-container{
     margin-top: var(--header-height);
+    margin-bottom: 50px;
+    min-height: calc(100vh - var(--footer-height) - 50px - var(--header-height));
+
 }
 
 /* intro bar */
@@ -242,10 +245,12 @@
     margin-top: 10px;
     text-decoration: none;
     display: block;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 3px;
     position: relative;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    background-color: var(--white-color);
+    padding-bottom: 8px;
 }
 
 .product-event__item-img{

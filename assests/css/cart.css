@@ -133,6 +133,10 @@
     cursor: pointer;
 }
 
+.total-money > button:hover{
+    background-color: rgba(235, 20, 20, 0.5);
+}
+
 .total-money__price{
     display: flex;
     justify-content: space-around;

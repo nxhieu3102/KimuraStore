@@ -61,62 +61,62 @@ const app = {
         })
     },
     // Responsive on tablet and mobile
-    mobileTabletResponsive: function (ev) {
-        $('.header__cart').click(function () {
-            if ($('.header__cart-list').css('display') === "none")
-                $('.header__cart-list').css('display', "block");
-            else
-                $('.header__cart-list').css('display', "none");
-        })
+    // mobileTabletResponsive: function (ev) {
+    //     $('.header__cart').click(function () {
+    //         if ($('.header__cart-list').css('display') === "none")
+    //             $('.header__cart-list').css('display', "block");
+    //         else
+    //             $('.header__cart-list').css('display', "none");
+    //     })
 
-        $('.category__mobile-click').click(function () {
-            if ($('.category__bar--mobile').css('display') === "none")
-                $('.category__bar--mobile').css('display', "block");
-            else
-                $('.category__bar--mobile').css('display', "none");
-        })
+    //     $('.category__mobile-click').click(function () {
+    //         if ($('.category__bar--mobile').css('display') === "none")
+    //             $('.category__bar--mobile').css('display', "block");
+    //         else
+    //             $('.category__bar--mobile').css('display', "none");
+    //     })
 
-        function handleEventOnclick() {
-            document.addEventListener("click", function (event) {
-                // check if each item is visiable
-                const $target = $(event.target);
+    //     function handleEventOnclick() {
+    //         document.addEventListener("click", function (event) {
+    //             // check if each item is visiable
+    //             const $target = $(event.target);
 
-                if (!$target.closest(".header__cart").length)
-                    $('.header__cart-list').css('display', "none");
+    //             if (!$target.closest(".header__cart").length)
+    //                 $('.header__cart-list').css('display', "none");
 
-            });
-        }
-
-
-        if (ev.matches) {
-            handleEventOnclick();
-        }
+    //         });
+    //     }
 
 
+    //     if (ev.matches) {
+    //         handleEventOnclick();
+    //     }
 
 
 
-    },
-    // Responsive on mobile
-    mobileResponsive: function (ev) {
 
-    },
-    // Responsive on tablet
-    tabletResponsive: function (ev) {
 
-    },
+    // },
+    // // Responsive on mobile
+    // mobileResponsive: function (ev) {
 
-    checkBreakPoint: function () {
-        this.mobileResponsive(mobileBP);
-        mobileBP.addListener(this.mobileResponsive);
-        this.tabletResponsive(tabletBP);
-        tabletBP.addListener(this.mobileResponsive);
-        this.mobileTabletResponsive(mobileTabletBP);
-        mobileTabletBP.addListener(this.mobileTabletResponsive);
-    },
+    // },
+    // // Responsive on tablet
+    // tabletResponsive: function (ev) {
+
+    // },
+
+    // checkBreakPoint: function () {
+    //     this.mobileResponsive(mobileBP);
+    //     mobileBP.addListener(this.mobileResponsive);
+    //     this.tabletResponsive(tabletBP);
+    //     tabletBP.addListener(this.mobileResponsive);
+    //     this.mobileTabletResponsive(mobileTabletBP);
+    //     mobileTabletBP.addListener(this.mobileTabletResponsive);
+    // },
 
     start: function () {
-        this.checkBreakPoint();
+        // this.checkBreakPoint();
         this.slickSlider();
     }
 };

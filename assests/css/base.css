@@ -345,6 +345,10 @@ h1,h2,h3,h4,p{
     padding: 4px 8px;
 }
 
+.header__icon-text-item:hover{
+    color: #ccc;
+}
+
 .header__icon-cart-quantity{
     font-size: 1.4rem;
     line-height: 1.4rem;
@@ -377,9 +381,9 @@ h1,h2,h3,h4,p{
     display: none;
 }
 
-/* .header__cart:hover .header__cart-list{
+.header__cart:hover .header__cart-list{
     display: block;
-}  */
+} 
 
 .header__cart-list--not-empty{
     display: block;

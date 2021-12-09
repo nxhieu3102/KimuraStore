@@ -128,9 +128,7 @@
     border-radius: 5px;
 }
 
-.category-bar__item-link:hover{
-    color: var(--red-color);
-}
+
 
 /* category mobile */
 

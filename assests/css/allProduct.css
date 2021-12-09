@@ -72,4 +72,6 @@ html {
 
 .product-grid__item {
     margin-bottom: 20px;
+    -webkit-tap-highlight-color: transparent;
+
 }

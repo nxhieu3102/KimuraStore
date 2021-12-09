@@ -114,9 +114,6 @@ html{
     text-decoration: none;
 }
 
-.hot-product-item:hover{
-    filter: brightness(0.8);
-}
 
 .hot-product-item h1{
     color: var(--text-color);
@@ -189,7 +186,3 @@ html{
     border-radius: 3px;
 }
 
-.field-item__options > button:hover{
-    background-color: var(--red-color);
-    color: var(--white-color);
-}

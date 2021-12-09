@@ -106,9 +106,7 @@
     font-weight: 500;
 }
 
-.remove-product:hover{
-    color: var(--red-color);
-}
+
 
 /* total money */
 
@@ -133,9 +131,7 @@
     cursor: pointer;
 }
 
-.total-money > button:hover{
-    background-color: rgba(235, 20, 20, 0.5);
-}
+
 
 .total-money__price{
     display: flex;

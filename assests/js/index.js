@@ -28,7 +28,28 @@ const app = {
                 },
             ]
         })
-
+        $('.small-img-row').slick({
+            autoplay: false,
+            draggable: false,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            prevArrow: `<button type='button' class='slick-prev pull-left'><i class="las la-arrow-left" aria-hidden='true'></i></button>`,
+            nextArrow: `<button type='button' class='slick-next pull-right'><i class="las la-arrow-right" aria-hidden='true'></i></button>`,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 5
+                    }
+                },
+                {
+                    breakpoint: 739,
+                    settings: {
+                        slidesToShow: 3 
+                    }
+                },
+            ]
+        })
         $('.intro-image').slick({
             autoplay: true,
             draggable: false,

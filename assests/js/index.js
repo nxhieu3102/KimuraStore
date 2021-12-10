@@ -25,6 +25,7 @@ const app = {
                     }
                 },
             ]
+
         })
         $('.small-img-row').slick({
             autoplay: false,

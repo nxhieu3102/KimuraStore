@@ -235,6 +235,18 @@
 
 /* best seller */
 
+.intro-image{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+}
+
+.intro-image.slick-initialized {
+    visibility: visible;
+    opacity: 1;    
+}
+
 .product-event__title{
     font-size: 2rem;
     margin-top: 40px;

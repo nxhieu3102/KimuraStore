@@ -11,18 +11,15 @@
     <link rel="stylesheet" href="./assests/font/fontawesome-free-5.15.4-web/css/all.min.css" />
     <link rel="stylesheet" href="./assests/css/grid.css" />
     <link rel="stylesheet" href="./assests/css/base.css" />
-    <link rel="stylesheet" href="./assests/css/productResponsive.css" />
-    <link rel="stylesheet" href="./assests/css/responsive.css" />
     <link rel="stylesheet" href="./assests/css/main.css" />
-    <link rel="stylesheet" href="./assests/css/allProduct.css" />
+    <link rel="stylesheet" href="./assests/css/singup.css" />
+    <link rel="stylesheet" href="./assests/css/responsive.css" />
     <link rel="stylesheet" href="./assests/font/1.3.0/css/line-awesome.css" />
     <link rel="stylesheet" href="./assests/font/1.3.0/css/line-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap"
+        rel="stylesheet" />
     <link rel="icon" href="./assests/img/LOGO.png" type="image/x-icon" />
 </head>
 
@@ -47,6 +44,7 @@
             </a>
         </div>
     </div>
+
     <header id="header">
         <div class="grid wide header-wrap">
             <div class="header__mobile-icon">
@@ -154,7 +152,7 @@
                 <div class="header__icon-item hide-on-mobile hide-on-tablet">
                     <i class="far fa-user"></i>
                     <div class="header__icon-text">
-                        <a href="./singup.html" class="header__icon-text-item">Đăng Kí</a>
+                        <a  href="./singup.html" class="header__icon-text-item">Đăng Kí</a>
                         <a href="./signin.html" class="header__icon-text-item">Đăng Nhập</a>
                     </div>
                 </div>
@@ -253,261 +251,37 @@
         </div>
     </header>
 
-    <div class="allproduct-container">
+    <div class="signin-container">
         <div class="grid wide">
-            <div class="filter">
-                <div class="row filter-item">
-                    <div class="col l-4 c-12 m-4">
-                        <select name="category" class="filter-option">
-                            <option value="">Danh mục sản phẩm</option>
-                            <option value="">Trang điểm</option>
-                            <option value="">Đồ ăn</option>
-                            <option value="">Kem chống nắng</option>
-                            <option value="">Nhà cửa và đời sống: đồ dùng cá nhân & gia đình
-                            </option>
-                            <option value="">Sửa rửa mặt</option>
-                            <option value="">Sản phẩm dưỡng mắt</option>
-                            <option value="">Kem dưỡng ẩm</option>
-                            <option value="">Tinh chất dưỡng</option>
-                            <option value="">Dụng cụ làm đẹp</option>
-                            <option value="">Tắm & chăm sóc cơ thể</option>
-                            <option value="">Giảm cân và chăm sóc sức khỏe</option>
-                            <option value="">Nước cân bằng da</option>
-                        </select>
+            <div class="singin-form">
+                <h1>Đăng Ký Tài Khoản</h1>
+                <p class="no-account">Bạn đã có tài khoản? Đăng nhập <a href="./signin.html">Tại đây</a></p>
+                <div class="singin-form-wrap">
+                    <h1>Thông Tin Cá Nhân</h1>
+                    <div class="singin-form__infor">
+                        <div class="form-infor-wrap">
+                            <p>Họ Và Tên <span class="required">*</span></p>
+                            <input type="text" placeholder="Email"> 
+                        </div>
+                        <div class="form-infor-wrap">
+                            <p>Số Điện Thoại <span class="required">*</span></p>
+                            <input type="number" placeholder="Email"> 
+                        </div>
+                        <div class="form-infor-wrap">
+                            <p>Email <span class="required">*</span></p>
+                            <input type="email" placeholder="Email"> 
+                        </div>
+                        <div class="form-infor-wrap">
+                            <p>Mật Khẩu <span class="required">*</span></p>
+                            <input type="password" placeholder="Mật khẩu"> 
+                        </div>
+                        <div class="form-infor-wrap">
+                            <p>Xác Nhận Mật Khẩu <span class="required">*</span></p>
+                            <input type="password" placeholder="Mật khẩu"> 
+                        </div>
                     </div>
-                    <div class="col l-4 c-12 m-4">
-                        <select name="price" class="filter-option">
-                            <option value="">Giá</option>
-                            <option value="">Tăng dần</option>
-                            <option value="">Giảm dần</option>
-                        </select>
-                    </div>
-                    <div class="col l-4 c-12 m-4">
-                        <select name="sort" class="filter-option">
-                            <option value="">Sắp xếp theo</option>
-                            <option value="">Mới nhất</option>
-                            <option value="">Giảm giá</option>
-                            <option value="">Theo ký tự A-Z</option>
-                            <option value="">Theo ký tự Z-A</option>
-                        </select>
-                    </div>
+                    <button class = "btn">Đăng Ký</button>
                 </div>
-            </div>
-            <h1>Tất cả sản phẩm</h1>
-            <div class="product-grid">
-                <div class="row">
-                    <div class="col l-3 m-4 c-6 product-grid__item">
-                        <a href="./product.html" class="product-event__item">
-                            <div class="product-event__item-img"
-                                style="background-image: url(./assests/img/product/item1.jpg)"></div>
-                            <h4 class="product-event__item-name">
-                                [Restock bao bì mới 2021] [thêm vị Trà sữa hoàng gia] BỘT GIẢM
-                                CÂN ASAHI SLIM UP SLIM SUPERFOOD SHAKE NỘI ĐỊA NHẬT BẢN
-                            </h4>
-                            <div class="product-event__item-price">560.000đ</div>
-                            <div class="product-event__item-add">
-                                <button class="product-event__item-btn btn">
-                                    Thêm vào giỏ hàng
-                                </button>
-                            </div>
-
-                        </a>
-                    </div>
-                    <div class="col l-3 m-4 c-6 product-grid__item">
-                        <a href="./product.html" class="product-event__item">
-                            <div class="product-event__item-img"
-                                style="background-image: url(./assests/img/product/item2.jpg)"></div>
-                            <h4 class="product-event__item-name">
-                                Xịt khoáng dưỡng da, kháng khuẩn, bụi mịn PM 2. 5 Earth Kafun
-                                Guard Spray nội địa Nhật Bản Top 1 Cosme
-                            </h4>
-                            <div class="product-event__item-price">350.000đ</div>
-                            <div class="product-event__item-add">
-                                <button class="product-event__item-btn btn">
-                                    Thêm vào giỏ hàng
-                                </button>
-                            </div>
-
-                        </a>
-                    </div>
-                    <div class="col l-3 m-4 c-6 product-grid__item">
-                        <a href="#" class="product-event__item">
-                            <div class="product-event__item-img"
-                                style="background-image: url(./assests/img/product/item3.jpg)"></div>
-                            <h4 class="product-event__item-name">
-                                Xịt khoáng dưỡng da, kháng khuẩn, bụi mịn PM 2. 5 Earth Kafun
-                                Guard Spray nội địa Nhật Bản Top 1 Cosme
-                            </h4>
-                            <div class="product-event__item-price">280.000đ - 495.000đ</div>
-                            <div class="product-event__item-add">
-                                <button class="product-event__item-btn btn">
-                                    Thêm vào giỏ hàng
-                                </button>
-                            </div>
-
-                        </a>
-                    </div>
-                    <div class="col l-3 m-4 c-6 product-grid__item">
-                        <a href="./product.html" class="product-event__item">
-                            <div class="product-event__item-img"
-                                style="background-image: url(./assests/img/product/item4.jpg)"></div>
-                            <h4 class="product-event__item-name">
-                                DẦU GỘI/XẢ KRACIE ICHIKAMI NỘI ĐỊA NHẬT BẢN DẠNG TÚI REFILL
-                                340ML
-                            </h4>
-                            <div class="product-event__item-price">205.000đ - 410.000đ</div>
-                            <div class="product-event__item-add">
-                                <button class="product-event__item-btn btn">
-                                    Thêm vào giỏ hàng
-                                </button>
-                            </div>
-
-                        </a>
-                    </div>
-                    <div class="col l-3 m-4 c-6 product-grid__item">
-                        <a href="./product.html" class="product-event__item">
-                            <div class="product-event__item-img"
-                                style="background-image: url(./assests/img/product/item5.jpg)"></div>
-                            <h4 class="product-event__item-name">
-                                KEO DÁN MI GIẢ D-UP 552 CLEAR TYPE NỘI ĐỊA NHẬT
-                            </h4>
-                            <div class="product-event__item-price">325.000đ</div>
-                            <div class="product-event__item-add">
-                                <button class="product-event__item-btn btn">
-                                    Thêm vào giỏ hàng
-                                </button>
-                            </div>
-
-                        </a>
-                    </div>
-                    <div class="col l-3 m-4 c-6 product-grid__item">
-                        <a href="./product.html" class="product-event__item">
-                            <div class="product-event__item-img"
-                                style="background-image: url(./assests/img/product/item1.jpg)"></div>
-                            <h4 class="product-event__item-name">
-                                [Restock bao bì mới 2021] [thêm vị Trà sữa hoàng gia] BỘT GIẢM
-                                CÂN ASAHI SLIM UP SLIM SUPERFOOD SHAKE NỘI ĐỊA NHẬT BẢN
-                            </h4>
-                            <div class="product-event__item-price">560.000đ</div>
-                            <div class="product-event__item-add">
-                                <button class="product-event__item-btn btn">
-                                    Thêm vào giỏ hàng
-                                </button>
-                            </div>
-
-                        </a>
-                    </div>
-                    <div class="col l-3 m-4 c-6 product-grid__item">
-                        <a href="./product.html" class="product-event__item">
-                            <div class="product-event__item-img"
-                                style="background-image: url(./assests/img/product/item2.jpg)"></div>
-                            <h4 class="product-event__item-name">
-                                Xịt khoáng dưỡng da, kháng khuẩn, bụi mịn PM 2. 5 Earth Kafun
-                                Guard Spray nội địa Nhật Bản Top 1 Cosme
-                            </h4>
-                            <div class="product-event__item-price">350.000đ</div>
-                            <div class="product-event__item-add">
-                                <button class="product-event__item-btn btn">
-                                    Thêm vào giỏ hàng
-                                </button>
-                            </div>
-
-                        </a>
-                    </div>
-                    <div class="col l-3 m-4 c-6 product-grid__item">
-                        <a href="#" class="product-event__item">
-                            <div class="product-event__item-img"
-                                style="background-image: url(./assests/img/product/item3.jpg)"></div>
-                            <h4 class="product-event__item-name">
-                                Xịt khoáng dưỡng da, kháng khuẩn, bụi mịn PM 2. 5 Earth Kafun
-                                Guard Spray nội địa Nhật Bản Top 1 Cosme
-                            </h4>
-                            <div class="product-event__item-price">280.000đ - 495.000đ</div>
-                            <div class="product-event__item-add">
-                                <button class="product-event__item-btn btn">
-                                    Thêm vào giỏ hàng
-                                </button>
-                            </div>
-
-                        </a>
-                    </div>
-                    <div class="col l-3 m-4 c-6 product-grid__item">
-                        <a href="./product.html" class="product-event__item">
-                            <div class="product-event__item-img"
-                                style="background-image: url(./assests/img/product/item4.jpg)"></div>
-                            <h4 class="product-event__item-name">
-                                DẦU GỘI/XẢ KRACIE ICHIKAMI NỘI ĐỊA NHẬT BẢN DẠNG TÚI REFILL
-                                340ML
-                            </h4>
-                            <div class="product-event__item-price">205.000đ - 410.000đ</div>
-                            <div class="product-event__item-add">
-                                <button class="product-event__item-btn btn">
-                                    Thêm vào giỏ hàng
-                                </button>
-                            </div>
-
-                        </a>
-                    </div>
-                    <div class="col l-3 m-4 c-6 product-grid__item">
-                        <a href="./product.html" class="product-event__item">
-                            <div class="product-event__item-img"
-                                style="background-image: url(./assests/img/product/item5.jpg)"></div>
-                            <h4 class="product-event__item-name">
-                                KEO DÁN MI GIẢ D-UP 552 CLEAR TYPE NỘI ĐỊA NHẬT
-                            </h4>
-                            <div class="product-event__item-price">325.000đ</div>
-                            <div class="product-event__item-add">
-                                <button class="product-event__item-btn btn">
-                                    Thêm vào giỏ hàng
-                                </button>
-                            </div>
-
-                        </a>
-                    </div>
-                    <div class="col l-3 m-4 c-6 product-grid__item">
-                        <a href="./product.html" class="product-event__item">
-                            <div class="product-event__item-img"
-                                style="background-image: url(./assests/img/product/item1.jpg)"></div>
-                            <h4 class="product-event__item-name">
-                                [Restock bao bì mới 2021] [thêm vị Trà sữa hoàng gia] BỘT GIẢM
-                                CÂN ASAHI SLIM UP SLIM SUPERFOOD SHAKE NỘI ĐỊA NHẬT BẢN
-                            </h4>
-                            <div class="product-event__item-price">560.000đ</div>
-                            <div class="product-event__item-add">
-                                <button class="product-event__item-btn btn">
-                                    Thêm vào giỏ hàng
-                                </button>
-                            </div>
-
-                        </a>
-                    </div>
-                    <div class="col l-3 m-4 c-6 product-grid__item">
-                        <a href="./product.html" class="product-event__item">
-                            <div class="product-event__item-img"
-                                style="background-image: url(./assests/img/product/item2.jpg)"></div>
-                            <h4 class="product-event__item-name">
-                                Xịt khoáng dưỡng da, kháng khuẩn, bụi mịn PM 2. 5 Earth Kafun
-                                Guard Spray nội địa Nhật Bản Top 1 Cosme
-                            </h4>
-                            <div class="product-event__item-price">350.000đ</div>
-                            <div class="product-event__item-add">
-                                <button class="product-event__item-btn btn">
-                                    Thêm vào giỏ hàng
-                                </button>
-                            </div>
-
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="pagination">
-                <div class="fas fa-chevron-left pagination-icon pagination-btn"></div>
-                <div class="pagination-number pagination-btn pagination-number--active">1</div>
-                <div class="pagination-number pagination-btn">2</div>
-                <div class="pagination-number pagination-btn">3</div>
-                <div class="pagination-number pagination-btn">...</div>
-                <div class="pagination-number pagination-btn">14</div>
-                <div class="fas fa-chevron-right pagination-icon pagination-icon--right pagination-btn"></div>
             </div>
         </div>
     </div>

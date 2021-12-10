@@ -43,7 +43,7 @@ const app = {
                 {
                     breakpoint: 739,
                     settings: {
-                        slidesToShow: 3 
+                        slidesToShow: 3
                     }
                 },
             ]
@@ -61,23 +61,99 @@ const app = {
     // Responsive on tablet and mobile
     mobileTabletResponsive: function (ev) {
         $('.header__cart').click(function () {
-            console.log($('.header__cart-list').css('display'));
             if ($('.header__cart-list').css('display') === "none")
-                $('.header__cart-list').css('display', "block");
+                $('.header__cart-list').css({ 'display': "block" });
             else
-                $('.header__cart-list').css('display', "none");
+                $('.header__cart-list').css({ 'display': "none" });
         })
 
         $('.category__mobile-click').click(function () {
             if ($('.category__bar--mobile').css('display') === "none")
-                $('.category__bar--mobile').css('display', "block");
+                $('.category__bar--mobile').css({ 'display': "block" });
             else
-                $('.category__bar--mobile').css('display', "none");
+                $('.category__bar--mobile').css({ 'display': "none" });
+        })
+
+        $('.contact').click(function () {
+            if ($('.contact__list').css('height') === "0px")
+                $('.contact__list').css({
+                    "opacity": "1",
+                    "height": "240px"
+                });
+            else
+                $('.contact__list').css({
+                    "opacity": "0",
+                    "height": "0"
+                });
+        })
+
+
+        $('.btn').on("touchstart", function () {
+            $(this).css({ "background-color": "rgba(235, 20, 20, 0.5)" });
+        })
+        $('.btn').on("touchend", function () {
+            $(this).css({ "background-color": "var(--red-color)" });
+        })
+
+        $('.pagination-btn').on("touchstart", function () {
+            $(this).css({ "color": "var(--red-color)" });
+        })
+        $('.pagination-btn').on("touchend", function () {
+            $(this).css({ "color": "var(--text-color)" });
+        })
+
+        $('.header__cart-item-remove').on("touchstart", function () {
+            $(this).css({ "color": "var(--red-color)" });
+        })
+        $('.header__cart-item-remove').on("touchend", function () {
+            $(this).css({ "color": "var(--text-color)" });
+        })
+
+        $('.pagination-number--active').on("touchstart", function () {
+            $(this).css({ "color": "var(--white-color)" });
+        })
+        $('.pagination-number--active').on("touchend", function () {
+            $(this).css({ "color": "var(--white-color)" });
+        })
+
+        $('.total-money > button').on("touchstart", function () {
+            $(this).css({ "background-color": "rgba(235, 20, 20, 0.5)" });
+        })
+        $('.total-money > button').on("touchend", function () {
+            $(this).css({ "background-color": "var(--red-color)" });
+        })
+
+
+
+        $('.remove-product').on("touchstart", function () {
+            $(this).css({ "color": "var(--red-color)" });
+        })
+        $('.remove-product').on("touchend", function () {
+            $(this).css({ "color": "#ccc" });
+        })
+
+        // $('.slick-arrow').unclick(function() {
+
+        // })
+        $('.quantity-btn--increase').click(function () {
+            setTimeout(function () {
+                let num = Number($('.quantity-number').val());
+                console.log(num)
+                $('.quantity-number').val(String(num + 1));
+            }, 700);
+        })
+
+        $('.quantity-btn--decrease').click(function () {
+            setTimeout(function () {
+                let num = Number($('.quantity-number').val());
+                console.log(num);
+                num = num - 1 >= 0 ? num - 1 : 0;
+                $('.quantity-number').val(String(num));
+            }, 700);
         })
 
         function handleEventOnclick() {
             document.addEventListener("click", function (event) {
-                // check if each item is visiable
                 const $target = $(event.target);
                 if (!$target.closest(".header__cart").length)
                     $('.header__cart-list').css('display', "none");

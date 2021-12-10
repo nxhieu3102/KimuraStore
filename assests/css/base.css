@@ -482,6 +482,7 @@ p {
     color: var(--text-color);
     font-size: 1.4rem;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .header__cart-view-cart {
@@ -564,6 +565,7 @@ p {
 
 .pagination-btn {
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .pagination-icon--right {
@@ -606,6 +608,8 @@ input[type="number"]::-webkit-outer-spin-button {
     background-color: var(--white-color);
     border: solid 1px #ccc;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 .change-quantity:first-child {
@@ -639,10 +643,15 @@ input[type="number"]::-webkit-outer-spin-button {
         color: var(--red-color);
     }
 
+    .pagination-number--active:hover{
+        color: var(--white-color);
+    }
+
     .slick-arrow:hover {
         background-color: var(--red-color);
         color: var(--white-color);
     }
+    
     .header__cart-item-remove:hover {
         color: var(--red-color);
         cursor: pointer;
@@ -681,7 +690,6 @@ input[type="number"]::-webkit-outer-spin-button {
     }
 
     .contact:hover .contact__list {
-        display: flex;
         opacity: 1;
         height: 240px;
     }

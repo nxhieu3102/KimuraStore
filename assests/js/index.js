@@ -191,4 +191,6 @@ const app = {
     }
 };
 
-app.start();
+$(window).on('load', function() { 
+    app.start();
+});
